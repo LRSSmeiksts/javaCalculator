@@ -6,7 +6,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 import static java.lang.Thread.sleep;
-// coment
+
 class Calculator implements ActionListener, MouseListener {
     double number, result;
     int calcType;
