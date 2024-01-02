@@ -260,14 +260,19 @@ class Calculator implements ActionListener, MouseListener {
                         result = number - Double.parseDouble(display.getText());
                         if (Double.toString(result).endsWith(".0")) {
                             display.setText(Double.toString(result).replace(".0", ""));
+                            break;
                         } else {
                             display.setText(Double.toString(result));
                             break;
                         }
                     case 3:
                         result = number * Double.parseDouble(display.getText());
+                        System.out.println(number);
+                        System.out.println(display.getText());
+                        System.out.println(result);
                         if (Double.toString(result).endsWith(".0")) {
                             display.setText(Double.toString(result).replace(".0", ""));
+                            break;
                         } else {
                             display.setText(Double.toString(result));
                             break;
@@ -288,7 +293,6 @@ class Calculator implements ActionListener, MouseListener {
                                     break;
                                 }
                             }
-                            System.out.println(temp);
                             result= Double.parseDouble(temp);
                         }
                         if (Double.toString(result).endsWith(".0")) {
