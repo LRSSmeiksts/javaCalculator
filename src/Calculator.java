@@ -245,8 +245,6 @@ class Calculator implements ActionListener, MouseListener {
             } else if (source == bttEQ) {
                 switch (calcType) {
                     case 1:
-                        System.out.println(number);
-                        System.out.println(Double.parseDouble(display.getText()));
                         result = number + Double.parseDouble(display.getText());
                         System.out.println(result);
                         if (Double.toString(result).endsWith(".0")) {
@@ -267,9 +265,6 @@ class Calculator implements ActionListener, MouseListener {
                         }
                     case 3:
                         result = number * Double.parseDouble(display.getText());
-                        System.out.println(number);
-                        System.out.println(display.getText());
-                        System.out.println(result);
                         if (Double.toString(result).endsWith(".0")) {
                             display.setText(Double.toString(result).replace(".0", ""));
                             break;
